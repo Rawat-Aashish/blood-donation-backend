@@ -12,6 +12,8 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -49,7 +51,13 @@ class User extends Authenticatable
         ];
     }
 
-    public function bloodGroup(){
-        return $this->belongsTo(BloodGroup::class, 'blood_group_id');
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
+
+    public function bloodGroup()
+    {
+        return $this->belongsTo(BloodGroup::class);
     }
 }

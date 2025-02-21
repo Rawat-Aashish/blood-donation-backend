@@ -11,6 +11,7 @@ Route::get('test', function () {
 
 
 Route::prefix('/user')->group(function () {
+    Route::get('/', [UserController::class, 'list']);
     Route::post('/register', [UserController::class, 'register']);
 });
 

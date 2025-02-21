@@ -28,4 +28,15 @@ class UserController extends Controller
             'status' => 1
         ]);
     }
+
+    public function list()
+    {
+        $user = User::all();
+
+        return response()->json([
+            'message' => 'user List returned successfully',
+            'data' => $user,
+            'status' => '1'
+        ]);
+    }
 }

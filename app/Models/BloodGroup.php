@@ -12,7 +12,7 @@ class BloodGroup extends Model
     //public $timestamps = false;
 
     //TABLE
-    public $table = '';
+    public $table = 'blood_groups';
 
     //FILLABLE
     protected $fillable = [];
@@ -34,8 +34,9 @@ class BloodGroup extends Model
     //    return $this->hasMany();
     //}
 
-    public function users(){
-        return $this->hasMany(User::class, 'blood_group_id');
+    public function users()
+    {
+        return $this->hasMany(User::class);
     }
 
     //ATTRIBUTES
@@ -43,5 +44,5 @@ class BloodGroup extends Model
     //{
     //    return $data;
     //}
-    
+
 }
