@@ -25,5 +25,4 @@ return Application::configure(basePath: dirname(__DIR__))
             MethodNotAllowedHttpException::class,
         ]);
         ExceptionHandler::handleApiException($exceptions);
-        //
     })->create();
