@@ -1,8 +1,7 @@
 <?php
 
 // namespace App\Traits;
-
-namespace Kakarot\LaravelInitialSetup\Traits;
+namespace App\Traits;
 
 use Illuminate\Support\Facades\Route;
 

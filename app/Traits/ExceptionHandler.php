@@ -1,6 +1,6 @@
 <?php
 
-namespace Kakarot\LaravelInitialSetup\Traits;
+namespace App\Http\Middleware;
 
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Validation\ValidationException;
@@ -10,7 +10,6 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\QueryException;
-use Kakarot\LaravelInitialSetup\Traits\ApiResponser;
 
 trait ExceptionHandler
 {

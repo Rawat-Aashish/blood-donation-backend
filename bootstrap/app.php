@@ -1,24 +1,20 @@
 <?php
 
-use Kakarot\LaravelInitialSetup\Middleware\HandleLocalization;
-
+use App\Http\Middleware\HandleLocalization;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
-
-use Kakarot\LaravelInitialSetup\Traits\ExceptionHandler;
-
-use Kakarot\LaravelInitialSetup\Traits\RouteHandler;
-
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use App\Traits\ExceptionHandler;
+use App\Traits\RouteHandler;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
-        then: RouteHandler::configureApiVersioning(),
-        web: __DIR__.'/../routes/web.php',
-        api: __DIR__.'/../routes/api.php',
-        commands: __DIR__.'/../routes/console.php',
+        web: __DIR__ . '/../routes/web.php',
+        api: __DIR__ . '/../routes/api.php',
+        commands: __DIR__ . '/../routes/console.php',
         health: '/up',
+        then: RouteHandler::configureApiVersioning(),
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->append(HandleLocalization::class);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kakarot\LaravelInitialSetup\Traits;
+namespace App\Http\Middleware;
 
 use Illuminate\Http\JsonResponse;
 
