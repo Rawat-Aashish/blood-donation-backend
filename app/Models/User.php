@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'blood_group_id',
+        'city_id',
+        'dob'
     ];
 
     /**
@@ -44,5 +47,9 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function bloodGroup(){
+        return $this->belongsTo(BloodGroup::class, 'blood_group_id');
     }
 }
