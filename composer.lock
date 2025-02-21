@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ead2d758f2b206d7ab18b5ab031934aa",
+    "content-hash": "71bc9a16b61ef0e849c721fead47610c",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,47 +1053,6 @@
                 }
             ],
             "time": "2025-02-03T10:55:03+00:00"
-        },
-        {
-            "name": "kakarot/laravel-initial-setup",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Rawat-Aashish/laravel-zero-to-ready.git",
-                "reference": "67316e5e0c53b83ee89b9f4dbac275d7f1d4abca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Rawat-Aashish/laravel-zero-to-ready/zipball/67316e5e0c53b83ee89b9f4dbac275d7f1d4abca",
-                "reference": "67316e5e0c53b83ee89b9f4dbac275d7f1d4abca",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^11.0",
-                "php": ">=8.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Kakarot\\LaravelInitialSetup\\LaravelSetupServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Kakarot\\LaravelInitialSetup\\": "src/",
-                    "Kakarot\\LaravelInitialSetup\\Traits\\": "src/Traits/",
-                    "Kakarot\\LaravelInitialSetup\\Middleware\\": "src/Middleware/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "A package to automate Laravel localization, exception handling and API versioning",
-            "support": {
-                "issues": "https://github.com/Rawat-Aashish/laravel-zero-to-ready/issues",
-                "source": "https://github.com/Rawat-Aashish/laravel-zero-to-ready/tree/v1.0.0"
-            },
-            "time": "2025-02-16T12:09:36+00:00"
         },
         {
             "name": "laravel/framework",
