@@ -20,10 +20,3 @@ Route::prefix('/require')->group(function () {
     Route::post('{user}/blood', [MailController::class, 'getBlood']);
 });
 
-
-Route::get('/run-migrations', function () {
-    Artisan::call('config:clear');
-    Artisan::call('cache:clear');
-    Artisan::call('migrate', ['--force' => true]);
-    return 'Migrations and cache cleared successfully!';
-});
